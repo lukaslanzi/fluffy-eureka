@@ -5,15 +5,17 @@ const app = new Application({
 	resolution: window.devicePixelRatio || 1,
 	autoDensity: true,
 	backgroundColor: 0x6495ed,
-	width: 1620,
-	height: 720
+	width: 640,
+	height: 480
 });
 
-const clampy: Sprite = Sprite.from("clampy.png");
+const clampy: Sprite = Sprite.from("./tarea.gif.gif");
+
+console.log (Hola profe)
 
 clampy.anchor.set(0.5);
 
-clampy.x = 800;
-clampy.y = 300;
+clampy.x = 300;
+clampy.y = 200;
 
 app.stage.addChild(clampy);
