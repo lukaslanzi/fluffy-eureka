@@ -1,4 +1,4 @@
-import { Application, Sprite } from 'pixi.js'
+import { Application, Sprite, VideoResource } from 'pixi.js'
 
 const app = new Application({
 	view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
@@ -9,7 +9,7 @@ const app = new Application({
 	height: 480
 });
 
-const clampy: Sprite = Sprite.from("./tarea.gif.gif");
+const clampy: Sprite = Sprite.from("./perro pug.jpg");
 
 console.log("Hola profe"+ "arreglé la tarea")
 
