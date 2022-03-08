@@ -1,4 +1,4 @@
-import { Application, Sprite, VideoResource } from 'pixi.js'
+import { Application, Sprite } from 'pixi.js'
 
 const app = new Application({
 	view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
