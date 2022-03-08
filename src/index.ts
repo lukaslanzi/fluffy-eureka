@@ -11,7 +11,7 @@ const app = new Application({
 
 const clampy: Sprite = Sprite.from("./tarea.gif.gif");
 
-console.log("Hola profe")
+console.log("Hola profe"+ "arreglé la tarea")
 
 clampy.anchor.set(0.5);
 
