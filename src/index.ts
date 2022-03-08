@@ -5,8 +5,8 @@ const app = new Application({
 	resolution: window.devicePixelRatio || 1,
 	autoDensity: true,
 	backgroundColor: 0x6495ed,
-	width: 640,
-	height: 480
+	width: 1820,
+	height: 780
 });
 
 const clampy: Sprite = Sprite.from("./perro pug.jpg");
@@ -15,7 +15,7 @@ console.log("Hola profe"+ "arreglé la tarea")
 
 clampy.anchor.set(0.5);
 
-clampy.x = 300;
-clampy.y = 200;
+clampy.x = 700;
+clampy.y = 300;
 
 app.stage.addChild(clampy);
