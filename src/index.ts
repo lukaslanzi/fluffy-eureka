@@ -1,4 +1,5 @@
-import { Application, Container, Sprite } from 'pixi.js'
+import { Application, } from 'pixi.js'
+import { Scene } from './Scene';
 
 const app = new Application({
 	view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
@@ -33,21 +34,11 @@ window.addEventListener("resize" , ()=>{
 });
 window.dispatchEvent (new Event ("resize"));
 
-const clampy: Sprite = Sprite.from("perro pug.jpg");
 
-const anteojos: Sprite = Sprite.from ("./anteojos facheros png.png");
+const myScene = new Scene ();
+app.stage.addChild(myScene);
 
-anteojos.position.set (70,10);
 
-anteojos.scale.set (0.2);
 
-const PugConAnteojos: Container = new Container ();
 
-PugConAnteojos.addChild (clampy);
-PugConAnteojos.addChild (anteojos);
 
-PugConAnteojos.scale.set (2);
-PugConAnteojos.x = (200);
-PugConAnteojos.y = (200);
-
-app.stage.addChild(PugConAnteojos);
