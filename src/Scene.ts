@@ -82,6 +82,9 @@ const Menu = Sprite.from("Menu.png")
 this.addChild(Menu)
 Menu.x = (580)
 Menu.y = (300)
+Menu.on("Mousedown" , this.onMousedown, this)
+Menu.on("Mouseup" , this.onMouseup, this)
+Menu.interactive = true
 
 
 const Exit = Sprite.from("Exit.png")
@@ -138,4 +141,12 @@ opc.x = (770)
 opc.y = (220)
 
     }
+
+    private onMousedown(){
+        console.log ("mouse down" , "nashe" , this)
+    }
+    private onMouseup(){
+        console.log ("mouse up" , "nashent" , this)
+    }
+
 }
