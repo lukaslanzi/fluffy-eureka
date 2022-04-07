@@ -52,6 +52,7 @@ ByakuQuieta.x = (180)
 ByakuQuieta.y = (300)
 
 
+
 const PMenu = Sprite.from("FondoMenu.jpg")
 this.addChild(PMenu)
 
@@ -135,6 +136,7 @@ this.sounds.on("mouseup" , this.onSoundsup, this)
 this.sounds.interactive = true
 
 
+
 this.bgm = Sprite.from("BGM.png")
 this.addChild (this.bgm)
 this.bgm.x = (645)
@@ -186,18 +188,21 @@ opc.interactive = true
 
     private onBGMdown():void{
         console.log ("bgm down" , this)
-        this.bgm.texture = Texture.from("BGMout.png") //se borra la textura preguntar
+        this.bgm.texture = Texture.from("./BGMout.png") 
     }
     private onBGMup():void{
         console.log ("bgm up" , this)
+        this.bgm.texture = Texture.from("./BGM.png")
     }
 
     private onSoundsdown():void{
         console.log ("sounds down" , this)
-        this.sounds.texture = Texture.from("SoundsOut.png") //se borra la textura preguntar
+        this.sounds.texture = Texture.from("./SoundsOut.png") 
+       
     }
     private onSoundsup():void{
         console.log ("sounds up" , this)
+        this.sounds.texture = Texture.from("./Sounds.png")
     }
 
     private onRSTdown():void{
