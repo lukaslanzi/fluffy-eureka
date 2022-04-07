@@ -185,15 +185,6 @@ opc.interactive = true
         console.log ("help up" , this)
     }
 
-    private onBGMdown():void{
-        console.log ("bgm down" , this)
-        this.bgm.texture = Texture.from("./BGMout.png") 
-    }
-    private onBGMup():void{
-        console.log ("bgm up" , this)
-        this.bgm.texture = Texture.from("./BGM.png")
-    }
-
     private onSoundsdown():void{
         console.log ("sounds down" , this)
         this.sounds.texture = Texture.from("./SoundsOut.png") 
