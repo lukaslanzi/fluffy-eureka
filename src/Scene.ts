@@ -82,8 +82,8 @@ const Menu = Sprite.from("Menu.png")
 this.addChild(Menu)
 Menu.x = (580)
 Menu.y = (300)
-Menu.on("Mousedown" , this.onMousedown, this)
-Menu.on("Mouseup" , this.onMouseup, this)
+Menu.on("Menudown" , this.onMenudown, this)
+Menu.on("Menuup" , this.onMenuup, this)
 Menu.interactive = true
 
 
@@ -91,12 +91,18 @@ const Exit = Sprite.from("Exit.png")
 this.addChild(Exit)
 Exit.x = (580)
 Exit.y = (400)
+Exit.on("Exitdown" , this.onExitdown, this)
+Exit.on("Exitup" , this.onExitup, this)
+Exit.interactive = true
 
 
 const RST = Sprite.from("Restart.png")
 this.addChild (RST)
 RST.x = (580)
 RST.y = (500)
+RST.on("RSTdown" , this.onRSTdown, this)
+RST.on("RSTup" , this.onRSTup, this)
+RST.interactive = true
 
 
 const HudButtons = Sprite.from("HudButtons.png")
@@ -121,32 +127,87 @@ const sounds = Sprite.from("Sounds.png")
 this.addChild (sounds)
 sounds.x = (532)
 sounds.y = (613)
+sounds.on("Soundsdown" , this.onSoundsdown, this)
+sounds.on("Soundsup" , this.onSoundsup, this)
+sounds.interactive = true
 
 
 const bgm = Sprite.from("BGM.png")
 this.addChild (bgm)
 bgm.x = (645)
 bgm.y = (610)
+bgm.on("BGMdown" , this.onBGMdown, this)
+bgm.on("BGMup" , this.onBGMup, this)
+bgm.interactive = true
 
 
 const help = Sprite.from("Help.png")
 this.addChild (help)
 help.x = (755)
 help.y = (610)
+help.on("Helpdown" , this.onHelpdown, this)
+help.on("Helpup" , this.onHelpup, this)
+help.interactive = true
 
 
 const opc = Sprite.from("Options.png")
 this.addChild (opc)
 opc.x = (770)
 opc.y = (220)
+opc.on("OPCdown" , this.onOPCdown, this)
+opc.on("OPCup" , this.onOPCup, this)
+opc.interactive = true
 
     }
 
-    private onMousedown(){
-        console.log ("mouse down" , "nashe" , this)
+    private onMenudown(){
+        console.log ("menu down" , this)
     }
-    private onMouseup(){
-        console.log ("mouse up" , "nashent" , this)
+    private onMenuup(){
+        console.log ("menu up" , this)
     }
+
+    private onOPCdown(){
+        console.log ("options down" , this)
+    }
+    private onOPCup(){
+        console.log ("options up" , this)
+    }
+
+    private onHelpdown(){
+        console.log ("help down" , this)
+    }
+    private onHelpup(){
+        console.log ("help up" , this)
+    }
+
+    private onBGMdown(){
+        console.log ("bgm down" , this)
+    }
+    private onBGMup(){
+        console.log ("bgm up" , this)
+    }
+
+    private onSoundsdown(){
+        console.log ("sounds down" , this)
+    }
+    private onSoundsup(){
+        console.log ("sounds up" , this)
+    }
+
+    private onRSTdown(){
+        console.log ("reset down" , this)
+    }
+    private onRSTup(){
+        console.log ("reset up" , this)
+    }
+
+    private onExitdown(){
+        console.log ("Exit down" , this)
+    }
+    private onExitup(){
+        console.log ("Exit up" , this)
+    }
+
 
 }
