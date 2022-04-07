@@ -3,6 +3,9 @@ import { GlassedPug } from "./GlassedByaku";
 
 export class Scene extends Container {
 
+    private sounds:Sprite
+    private bgm:Sprite
+
     constructor ()
     {
 
@@ -123,22 +126,22 @@ HudButtons3.x = (740)
 HudButtons3.y = (600)
 
 
-const sounds = Sprite.from("Sounds.png")
-this.addChild (sounds)
-sounds.x = (532)
-sounds.y = (613)
-sounds.on("mousedown" , this.onSoundsdown, this)
-sounds.on("mouseup" , this.onSoundsup, this)
-sounds.interactive = true
+this.sounds = Sprite.from("Sounds.png")
+this.addChild (this.sounds)
+this.sounds.x = (532)
+this.sounds.y = (613)
+this.sounds.on("mousedown" , this.onSoundsdown, this)
+this.sounds.on("mouseup" , this.onSoundsup, this)
+this.sounds.interactive = true
 
 
-const bgm = Sprite.from("BGM.png")
-this.addChild (bgm)
-bgm.x = (645)
-bgm.y = (610)
-bgm.on("mousedown" , this.onBGMdown, this)
-bgm.on("mouseup" , this.onBGMup, this)
-bgm.interactive = true
+this.bgm = Sprite.from("BGM.png")
+this.addChild (this.bgm)
+this.bgm.x = (645)
+this.bgm.y = (610)
+this.bgm.on("mousedown" , this.onBGMdown, this)
+this.bgm.on("mouseup" , this.onBGMup, this)
+this.bgm.interactive = true
 
 
 const help = Sprite.from("Help.png")
@@ -164,7 +167,7 @@ opc.interactive = true
         console.log ("menu down" , this)
     }
     private onMenuup():void {
-        console.log ("menu up" , this)
+        console.log ("menu modo sexo" , this)
     }
 
     private onOPCdown():void{
@@ -183,6 +186,7 @@ opc.interactive = true
 
     private onBGMdown():void{
         console.log ("bgm down" , this)
+        this.bgm.texture = Texture.from("BGMout.png") //se borra la textura preguntar
     }
     private onBGMup():void{
         console.log ("bgm up" , this)
@@ -190,6 +194,7 @@ opc.interactive = true
 
     private onSoundsdown():void{
         console.log ("sounds down" , this)
+        this.sounds.texture = Texture.from("SoundsOut.png") //se borra la textura preguntar
     }
     private onSoundsup():void{
         console.log ("sounds up" , this)
