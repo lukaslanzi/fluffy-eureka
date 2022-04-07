@@ -167,45 +167,45 @@ opc.interactive = true
         console.log ("menu up" , this)
     }
 
-    private onOPCdown(){
+    private onOPCdown():void{
         console.log ("options down" , this)
     }
-    private onOPCup(){
+    private onOPCup():void{
         console.log ("options up" , this)
     }
 
-    private onHelpdown(){
+    private onHelpdown():void{
         console.log ("help down" , this)
     }
-    private onHelpup(){
+    private onHelpup():void{
         console.log ("help up" , this)
     }
 
-    private onBGMdown(){
+    private onBGMdown():void{
         console.log ("bgm down" , this)
     }
-    private onBGMup(){
+    private onBGMup():void{
         console.log ("bgm up" , this)
     }
 
-    private onSoundsdown(){
+    private onSoundsdown():void{
         console.log ("sounds down" , this)
     }
-    private onSoundsup(){
+    private onSoundsup():void{
         console.log ("sounds up" , this)
     }
 
-    private onRSTdown(){
+    private onRSTdown():void{
         console.log ("reset down" , this)
     }
-    private onRSTup(){
+    private onRSTup():void{
         console.log ("reset up" , this)
     }
 
-    private onExitdown(){
+    private onExitdown():void{
         console.log ("Exit down" , this)
     }
-    private onExitup(){
+    private onExitup():void{
         console.log ("Exit up" , this)
     }
 
