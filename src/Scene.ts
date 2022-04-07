@@ -136,7 +136,6 @@ this.sounds.on("mouseup" , this.onSoundsup, this)
 this.sounds.interactive = true
 
 
-
 this.bgm = Sprite.from("BGM.png")
 this.addChild (this.bgm)
 this.bgm.x = (645)
