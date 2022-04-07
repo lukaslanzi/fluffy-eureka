@@ -82,8 +82,8 @@ const Menu = Sprite.from("Menu.png")
 this.addChild(Menu)
 Menu.x = (580)
 Menu.y = (300)
-Menu.on("Menudown" , this.onMenudown, this)
-Menu.on("Menuup" , this.onMenuup, this)
+Menu.on("mousedown" , this.onMenudown, this)
+Menu.on("mouseup" , this.onMenuup, this)
 Menu.interactive = true
 
 
@@ -91,8 +91,8 @@ const Exit = Sprite.from("Exit.png")
 this.addChild(Exit)
 Exit.x = (580)
 Exit.y = (400)
-Exit.on("Exitdown" , this.onExitdown, this)
-Exit.on("Exitup" , this.onExitup, this)
+Exit.on("mousedown" , this.onExitdown, this)
+Exit.on("mouseup" , this.onExitup, this)
 Exit.interactive = true
 
 
@@ -100,8 +100,8 @@ const RST = Sprite.from("Restart.png")
 this.addChild (RST)
 RST.x = (580)
 RST.y = (500)
-RST.on("RSTdown" , this.onRSTdown, this)
-RST.on("RSTup" , this.onRSTup, this)
+RST.on("mousedown" , this.onRSTdown, this)
+RST.on("mouseup" , this.onRSTup, this)
 RST.interactive = true
 
 
@@ -127,8 +127,8 @@ const sounds = Sprite.from("Sounds.png")
 this.addChild (sounds)
 sounds.x = (532)
 sounds.y = (613)
-sounds.on("Soundsdown" , this.onSoundsdown, this)
-sounds.on("Soundsup" , this.onSoundsup, this)
+sounds.on("mousedown" , this.onSoundsdown, this)
+sounds.on("mouseup" , this.onSoundsup, this)
 sounds.interactive = true
 
 
@@ -136,8 +136,8 @@ const bgm = Sprite.from("BGM.png")
 this.addChild (bgm)
 bgm.x = (645)
 bgm.y = (610)
-bgm.on("BGMdown" , this.onBGMdown, this)
-bgm.on("BGMup" , this.onBGMup, this)
+bgm.on("mousedown" , this.onBGMdown, this)
+bgm.on("mouseup" , this.onBGMup, this)
 bgm.interactive = true
 
 
@@ -145,8 +145,8 @@ const help = Sprite.from("Help.png")
 this.addChild (help)
 help.x = (755)
 help.y = (610)
-help.on("Helpdown" , this.onHelpdown, this)
-help.on("Helpup" , this.onHelpup, this)
+help.on("mousedown" , this.onHelpdown, this)
+help.on("mouseup" , this.onHelpup, this)
 help.interactive = true
 
 
@@ -154,16 +154,16 @@ const opc = Sprite.from("Options.png")
 this.addChild (opc)
 opc.x = (770)
 opc.y = (220)
-opc.on("OPCdown" , this.onOPCdown, this)
-opc.on("OPCup" , this.onOPCup, this)
+opc.on("mousedown" , this.onOPCdown, this)
+opc.on("mouseup" , this.onOPCup, this)
 opc.interactive = true
 
     }
 
-    private onMenudown(){
+    private onMenudown():void {
         console.log ("menu down" , this)
     }
-    private onMenuup(){
+    private onMenuup():void {
         console.log ("menu up" , this)
     }
 
